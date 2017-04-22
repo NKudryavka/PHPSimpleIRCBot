@@ -23,4 +23,7 @@ serversの中身はキーは設定名、設定の中身は
 モジュール名が`hoge`の場合、`modules/hoge/hoge.php`に記述し、
 `namespace Modules\Hoge;`としたうえで`Hoge`クラスに記述する。
 `config.php`で設定したオプションは`$this->options`で取得できる。
+
+また、`init()`をオーバーライドして初期化を行う。
+
 詳しいことはrepeatモジュールを参考にする。
