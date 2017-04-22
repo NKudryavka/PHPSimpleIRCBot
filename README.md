@@ -19,7 +19,7 @@ serversの中身はキーは設定名、設定の中身は
 
 ## モジュールについて
 このbotはモジュールを追加することで機能を拡張できる。
-モジュールを追加する場合、Modules\\Moduleを継承する。
+モジュールを追加する場合、`Modules\Module`を継承する。
 モジュール名が`hoge`の場合、`modules/hoge/hoge.php`に記述し、
 `namespace Modules\Hoge;`としたうえで`Hoge`クラスに記述する。
 `config.php`で設定したオプションは`$this->options`で取得できる。
